@@ -5,7 +5,7 @@ if [ $# -eq 0 ]; then
     exit 1
 fi
 
-commit_message="$1"
+commit_message="$*"
 issue="#1"
 
 git commit -m "feat: FM $issue - $commit_message"
